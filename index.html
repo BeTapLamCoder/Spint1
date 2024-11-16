@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TADA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="logo">TADA</h1>
+        <nav class="navigation">
+            <a href="#home">Home Page</a>
+            <a href="#information">Information</a>
+        </nav>
+        <form class="search-form">
+            <label for="search">Search</label>
+            <input id="search" type="search" placeholder="Enter your keyword..." required>
+        </form>
+    </header>
+
+    <main>
+        <section class="infor">
+            <h2 class="title">How to Write Clean Code in JavaScript</h2>
+            <div class="image-container">
+                <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1730737606075/5cb4369b-9f2e-4f97-9765-ac00a62800c6.png" 
+                     alt="Image about clean code in JavaScript">
+            </div>
+            <ul class="tips-list">
+                <li>Use Meaningful Names</li>
+                <li>Follow the Single Responsibility Principle (SRP)</li>
+                <li>Avoid Unnecessary Comments</li>
+                <li>Make Your Code Readable</li>
+                <li>Write Unit Tests</li>
+                <li>Be Careful with Dependencies</li>
+                <li>Organize Your Project</li>
+                <li>Use Consistent Formatting</li>
+                <li>Avoid Hardcoding Values</li>
+                <li>Limit Function Length</li>
+            </ul>
+        </section>
+
+        <section class="details">
+            <h3>Use Meaningful Names</h3>
+            <p>When naming variables, functions, and classes, pick names that clearly describe their purpose. Instead of calling a variable <code>b</code>, try <code>numberOfUsers</code>. This way, anyone reading your code can easily understand its purpose without needing additional comments. A meaningful name eliminates guesswork and avoids confusion.</p>
+        </section>
+        <section class="details">
+            <h3>Follow the Single Responsibility Principle (SRP)</h3>
+            <p>The Single Responsibility Principle means that each function or method should have one specific job.
+
+                This keeps your functions short and focused which makes them easier to read, test, and maintain.
+                
+                Imagine a toolbox where each tool has a unique purpose—clean code functions should work the same way.
+                For instance, if you have a function called calculateTotal, it should only handle calculating the total. If you add extra tasks, it can lead to confusing code that’s hard to maintain.
+
+Here's an example to show why it's important to keep functions focused:
+
+Let’s say you want to calculate a total and return an object with extra information, like who calculated it and when. Instead of adding these directly into calculateTotal, we can use a second function.
+            </p>
+        </section>
+        <section class="details">
+            <h3>Avoid Unnecessary Comments</h3>
+            <p>Good code should be self-explanatory without needing excessive comments. Focus on writing code that’s clear and understandable on its own.
+
+                Comments are helpful when explaining complex logic or a unique approach, but too many comments can clutter your code and make it hard to follow.</p>
+        </section>
+        <section class="details">
+            <h3>Make Your Code Readable</h3>
+            <p>Readable code uses indentation, line breaks, and spaces to keep everything neat and organized.
+
+                Think of it like writing a story: paragraphs make reading easier by breaking up large chunks of text. In coding, line breaks serve the same purpose.</p>
+        </section>
+        <section class="details">
+            <h3>Write Unit Tests</h3>
+            <p>Unit tests help make sure each part of your code works as expected.
+
+                By testing small, individual parts (like functions), you can catch bugs early and prevent them from spreading to other parts of the code.
+                
+                Concretely, unit tests are actually mini quality checks for each part of your code to ensure they’re working as intended.</p>
+        </section>
+    </main>
+</body>
+
+</html>
